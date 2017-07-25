@@ -22,5 +22,13 @@ describe("Park", function() {
     assert.strictEqual(park.numDino(), 1);
   })
 
+  it("remove dinosaur of particular type", function() {
+    park.add(dinosaur1);
+    park.add(dinosaur1);
+    park.add(dinosaur2);
+    park.removeType();
+    assert.strictEqual(park.numDino(), 1);
+  })
+
 
 })
