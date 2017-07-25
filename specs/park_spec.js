@@ -1,5 +1,6 @@
 var assert = require("assert");
 var Park = require("../park.js");
+var Dinosaur = require("../dinosaur.js")
 
 describe("Park", function() {
   var park;
@@ -7,16 +8,16 @@ describe("Park", function() {
   var dinosaur2;
 
   beforeEach(function() {
-    park = new Park("Jurassic Park");
+    park = new Park();
     dinosaur1 = new Dinosaur("Tyrannosaurus", 3);
     dinosaur2 = new Dinosaur("Velociraptor", 2);
   })
 
-  it("park has name", function() {
-    assert.strictEqual(park.name, "Jurassic Park");
+  it("enclosure should start empty", function() {
+    assert.strictEqual(park.enclosure.length, 0);
   })
 
-  
+
 
 
 })

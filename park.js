@@ -1,5 +1,4 @@
-var Park = function(name) {
-  this.name = name;
+var Park = function() {
   this.enclosure = [];
 }
 
