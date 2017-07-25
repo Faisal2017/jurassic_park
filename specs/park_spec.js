@@ -22,13 +22,18 @@ describe("Park", function() {
     assert.strictEqual(park.numDino(), 1);
   })
 
-  it("remove dinosaur of particular type", function() {
-    park.add(dinosaur1);
+  // it("remove dinosaur of particular type", function() {
+  //   park.add(dinosaur1);
+  //   park.add(dinosaur1);
+  //   park.add(dinosaur2);
+  //   park.removeType("Tyrannosaurus");
+  //   assert.strictEqual(park.numDino(), 1);
+  // })
+
+  it("should get dinosaur with offspring count > 2", function() {
     park.add(dinosaur1);
     park.add(dinosaur2);
-    park.removeType();
-    assert.strictEqual(park.numDino(), 1);
+    assert.strictEqual(park.offspringGreaterTwo(), dinosaur1);
   })
-
 
 })
