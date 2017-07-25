@@ -14,10 +14,13 @@ describe("Park", function() {
   })
 
   it("enclosure should start empty", function() {
-    assert.strictEqual(park.enclosure.length, 0);
+    assert.strictEqual(park.numDino(), 0);
   })
 
-
+  // it("should add dinosaur to enclosure", function() {
+  //   park.add(dinosaur1);
+  //   assert.strictEqual(park.enclosure.length, 1);
+  // })
 
 
 })
