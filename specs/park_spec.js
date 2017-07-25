@@ -17,10 +17,10 @@ describe("Park", function() {
     assert.strictEqual(park.numDino(), 0);
   })
 
-  // it("should add dinosaur to enclosure", function() {
-  //   park.add(dinosaur1);
-  //   assert.strictEqual(park.enclosure.length, 1);
-  // })
+  it("should add dinosaur to enclosure", function() {
+    park.add(dinosaur1);
+    assert.strictEqual(park.numDino(), 1);
+  })
 
 
 })
